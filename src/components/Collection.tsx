@@ -38,7 +38,7 @@ export const Collection = () => {
       const types = data.results.map((type: { name: string }) => type.name);
       setAllTypes(types);
     } catch (error) {
-      console.error("Error fetching Pokémon types:", error);
+      console.log("Error fetching Pokémon types:", error);
     }
   };
 
